@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
 from datetime import datetime
 import os
-from aqi_downloader import AQIBulletinDownloader
-from extract_aqi import AQIDataExtractor
+from aqi_pdf_downloader import AQIBulletinDownloader
+from complete_aqi_extractor_fixed import AQIDataExtractor
+
 
 app = Flask(__name__)
 
